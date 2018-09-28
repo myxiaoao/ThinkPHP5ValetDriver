@@ -12,8 +12,7 @@ class ThinkPHP5ValetDriver extends ValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        return file_exists($sitePath . '/thinkphp/base.php') &&
-        file_exists($sitePath . '/think');
+        return file_exists($sitePath . '/thinkphp/base.php') && file_exists($sitePath . '/think');
     }
     /**
      * Determine if the incoming request is for a static file.
